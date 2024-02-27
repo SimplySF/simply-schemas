@@ -16,6 +16,4 @@ fs.readdirSync(__dirname)
     schemas[path.basename(schema, '.schema.json')] = path.resolve(
       path.join(__dirname, schema)
     );
-  })
-
-module.exports = schemas
+  });
