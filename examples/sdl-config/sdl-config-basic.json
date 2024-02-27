@@ -1,0 +1,37 @@
+{
+  "options": {
+    "bulkApiBatchSize": 10000,
+    "bulkApiPollInterval": 10,
+    "bulkApiTimeout": 600
+  },
+  "objects": [
+    {
+      "objectApiName": "Account",
+      "options": {
+        "bulkApiBatchSize": 5000
+      },
+      "fieldsToSelect": {
+        "allFields": false,
+        "customFields": false,
+        "fieldApiNames": [
+          "Id",
+          "Description",
+          "Name",
+          "Status"
+        ]
+      },
+      "fieldsToExclude": [
+        "OwnerId"
+      ],
+      "fieldTransforms": {
+        "Description": {
+          "csvColumnHeader": "Desc",
+          "lowercase": true,
+          "strip": true
+        }
+      },
+      "queryWhere": "Name != 'Fishy'",
+      "queryOrderBy": "Name ASC"
+    }
+  ]
+}
