@@ -1,9 +1,9 @@
 {
-  "name": "@simplysf/simply-schemas",
-  "description": "Simply elegant data loader",
+  "name": "@simplysf/schemas",
+  "description": "Schemas for @simplysf",
   "version": "1.0.0",
   "author": "@ClayChipps",
-  "bugs": "https://github.com/SimplySF/simply-schemas/issues",
+  "bugs": "https://github.com/SimplySF/schemas/issues",
   "devDependencies": {
     "@simplysf/dev-scripts": "^2.1.0",
     "ajv": "^8.12.0"
@@ -15,12 +15,12 @@
     "/lib",
     "*.schema.json"
   ],
-  "homepage": "https://github.com/SimplySF/simply-schemas",
+  "homepage": "https://github.com/SimplySF/schemas",
   "license": "BSD-3-Clause",
   "publishConfig": {
     "access": "public"
   },
-  "repository": "SimplySF/simply-schemas",
+  "repository": "SimplySF/schemas",
   "scripts": {
     "build": "wireit",
     "compile": "wireit",
